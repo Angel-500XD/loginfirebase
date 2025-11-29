@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área privada</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="home-body">
+
+    <div class="dashboard-container fade-in">
+
+        <nav class="navbar">
+            <h2 class="logo">AREA PRIVADA</h2>
+            <button id="logoutBtn" class="logout-btn">Cerrar sesión</button>
+        </nav>
+
+        <section class="content">
+            <h1 class="title">Bienvenido al panel privado</h1>
+            <p class="subtitle">Has iniciado sesión correctamente.</p>
+
+            <div class="video-card">
+                <video src="https://youtu.be/80K7Lpqfg24?list=RD80K7Lpqfg24" controls></video>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        document.getElementById("logoutBtn").addEventListener("click", () => {
+            window.location.href = "index.html";  
+        });
+    </script>
+
+</body>
+</html>

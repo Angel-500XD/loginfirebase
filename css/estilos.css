@@ -1,0 +1,258 @@
+body {
+    margin: 0;
+    background: #0a0f0f;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+}
+
+/* Layout general */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Imagen lateral */
+.side-image {
+    width: 50%;
+    background: #000;
+    position: relative;
+}
+
+.side-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+
+.text-overlay h1 {
+    font-size: 45px;
+    color: #00ff88;
+}
+
+.text-overlay p {
+    margin-top: -10px;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/* Formulario */
+.form-container {
+    width: 50%;
+    background: #0d1414;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #00ffaa;
+}
+
+input {
+    background: #111;
+    border: 1px solid #00ffaa55;
+    padding: 15px;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    width: 100%;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #00ffaa;
+    box-shadow: 0 0 10px #00ffaa;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.show-pass {
+    position: absolute;
+    right: 15px;
+    top: 14px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.show-pass:hover {
+    opacity: 1;
+}
+
+/* Botón login */
+.btn {
+    background: #00ffaa;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #00d488;
+    transform: scale(1.05);
+}
+
+/* Caja de error */
+.error-box {
+    margin-top: 20px;
+    padding: 15px;
+    background: #220000;
+    border: 1px solid #ff4444;
+    color: #ff7777;
+    border-radius: 8px;
+    font-size: 14px;
+    box-shadow: 0 0 10px #ff4444;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Botón de ayuda */
+.help-btn {
+    margin-top: 20px;
+    background: #004433;
+    border: 1px solid #00ffaa;
+    color: #00ffaa;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.help-btn:hover {
+    background: #006655;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    width: 450px;
+    background: #0d1414;
+    padding: 25px;
+    border: 1px solid #00ffaa;
+    border-radius: 12px;
+}
+
+.close-btn {
+    float: right;
+    cursor: pointer;
+    color: #00ffaa;
+    font-size: 20px;
+}
+
+.close-btn:hover {
+    color: white;
+}
+/* ====== ESTILO GENERAL ====== */
+body.home-body {
+    background: linear-gradient(135deg, #0b0f10, #0f1a17);
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+}
+
+/* Animación suave */
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ====== NAVBAR ====== */
+.navbar {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(20, 20, 20, 0.6);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(0, 255, 100, 0.2);
+}
+
+.logo {
+    margin: 0;
+    font-size: 24px;
+    color: #31ff87;
+    letter-spacing: 1px;
+}
+
+.logout-btn {
+    background: #31ff87;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+    transition: 0.2s;
+}
+
+.logout-btn:hover {
+    background: #1cbf62;
+    transform: scale(1.05);
+}
+
+/* ====== CONTENIDO ====== */
+.dashboard-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.title {
+    font-size: 38px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px #31ff87;
+}
+
+.subtitle {
+    color: #b4ffdd;
+    margin-bottom: 30px;
+}
+
+/* ====== VIDEO CARD ====== */
+.video-card {
+    background: #111;
+    border: 2px solid #31ff87;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 0 20px rgba(0, 255, 100, 0.3);
+    transition: 0.3s;
+}
+
+.video-card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 30px rgba(0, 255, 100, 0.5);
+}
+
+.video-card video {
+    width: 100%;
+    border-radius: 10px;
+}

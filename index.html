@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Cyber</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+
+
+<div class="container">
+
+    <!-- Imagen lateral -->
+    <div class="side-image">
+        <img src="img/halo-12244.jpg" alt="Personaje">
+        <div class="text-overlay">
+            <h1>Bienvenido</h1>
+            <p>pagina de seguridad</p>
+        </div>
+    </div>
+
+    <!-- Formulario -->
+    <div class="form-container">
+        <h2>LOGIN</h2>
+
+        <input id="email" type="email" placeholder="Correo electrónico">
+        
+        <div class="password-wrapper">
+            <input id="password" type="password" placeholder="Contraseña">
+            <span id="showPass" class="show-pass">👁</span>
+        </div>
+
+        <button id="loginBtn" class="btn">Iniciar sesión</button>
+
+        <!-- Mensaje de error -->
+        <div id="errorBox" class="error-box hidden"></div>
+
+    
+    </div>
+
+</div>
+
+<script type="module" src="js/auth.js"></script>
+</body>
+</html>
