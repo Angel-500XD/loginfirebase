@@ -238,13 +238,13 @@ body.home-body {
 }
 
 /* ====== VIDEO CARD ====== */
-.video-card {
-    background: #111;
-    border: 2px solid #31ff87;
+.video-card iframe {
+    width: 100%;
+    max-width: 1000px;
+    height: 700px;
     border-radius: 15px;
-    padding: 15px;
-    box-shadow: 0 0 20px rgba(0, 255, 100, 0.3);
-    transition: 0.3s;
+    border: none;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 }
 
 .video-card:hover {
@@ -256,3 +256,4 @@ body.home-body {
     width: 100%;
     border-radius: 10px;
 }
+
